@@ -1,0 +1,7 @@
+<svg width="300" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="450" fill="#E8F5E8"/>
+  <text x="150" y="200" font-family="Arial, sans-serif" font-size="24" fill="#006400" text-anchor="middle">FORREST GUMP</text>
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="16" fill="#006400" text-anchor="middle">Life is like a box of</text>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="16" fill="#006400" text-anchor="middle">chocolates</text>
+  <text x="150" y="280" font-family="Arial, sans-serif" font-size="14" fill="#006400" text-anchor="middle">1994</text>
+</svg> 
