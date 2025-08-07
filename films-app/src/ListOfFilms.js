@@ -1,4 +1,3 @@
-// src/ListOfFilms.js
 import starWarsImage from './assets/star-wars.jpg.svg';
 import inceptionImage from './assets/inception.jpg.svg';
 import matrixImage from './assets/the-matrix.jpg.svg';
