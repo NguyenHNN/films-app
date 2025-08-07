@@ -3,21 +3,21 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 30px 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 8px 32px var(--shadow-color);
 }
 
 .films-container h1 {
   text-align: center;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 40px;
   font-size: 3em;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #ffffff, #f0f0f0);
+  text-shadow: 2px 2px 4px var(--text-shadow);
+  background: linear-gradient(45deg, var(--text-color), #3498db);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -1,17 +1,24 @@
+/* src/index.css */
 :root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   font-weight: 400;
 
-  color-scheme: light;
-  color: #2c3e50;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-attachment: fixed;
+  --bg-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --text-color: #2c3e50;
+  --card-bg: rgba(255, 255, 255, 0.15);
+  --card-border: rgba(255, 255, 255, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --text-shadow: rgba(0, 0, 0, 0.3);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.dark {
+  --bg-color: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
+  --text-color: #e0e0e0;
+  --card-bg: rgba(0, 0, 0, 0.3);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --text-shadow: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -34,8 +41,9 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--bg-color);
   background-attachment: fixed;
+  color: var(--text-color);
 }
 
 h1 {
@@ -43,7 +51,7 @@ h1 {
   line-height: 1.2;
   font-weight: 700;
   margin: 0;
-  background: linear-gradient(45deg, #2c3e50, #3498db);
+  background: linear-gradient(45deg, var(--text-color), #3498db);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
