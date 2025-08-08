@@ -1,3 +1,4 @@
+// Import các file ảnh SVG
 import starWarsImage from './assets/star-wars.jpg.svg';
 import inceptionImage from './assets/inception.jpg.svg';
 import matrixImage from './assets/the-matrix.jpg.svg';
@@ -16,7 +17,8 @@ const filmsData = [
     year: "1977",
     nation: "USA",
     description: "Luke Skywalker tham gia lực lượng nổi dậy để chống lại Đế quốc Galactic.",
-    genre: "Khoa học viễn tưởng"
+    genre: "Khoa học viễn tưởng",
+    clip: "https://www.youtube.com/embed/vZ734NWnAHA"
   },
   {
     id: 2,
@@ -25,7 +27,8 @@ const filmsData = [
     year: "2010",
     nation: "USA",
     description: "Một tên trộm có khả năng xâm nhập giấc mơ thực hiện vụ trộm bất khả thi.",
-    genre: "Khoa học viễn tưởng"
+    genre: "Khoa học viễn tưởng",
+    clip: "https://www.youtube.com/embed/YoHD9XEInc0"
   },
   {
     id: 3,
@@ -34,7 +37,8 @@ const filmsData = [
     year: "1999",
     nation: "USA",
     description: "Một hacker khám phá thực tại ảo và chiến đấu để cứu nhân loại.",
-    genre: "Hành động"
+    genre: "Hành động",
+    clip: "https://www.youtube.com/embed/vKQi3bBA1y8"
   },
   {
     id: 4,
@@ -43,7 +47,8 @@ const filmsData = [
     year: "2019",
     nation: "South Korea",
     description: "Một gia đình nghèo lên kế hoạch thâm nhập vào nhà giàu.",
-    genre: "Tâm lý"
+    genre: "Tâm lý",
+    clip: "https://www.youtube.com/embed/5xH0HfJHsaY"
   },
   {
     id: 5,
@@ -52,7 +57,8 @@ const filmsData = [
     year: "2001",
     nation: "Japan",
     description: "Cô bé Chihiro bước vào thế giới thần bí để cứu cha mẹ.",
-    genre: "Hoạt hình"
+    genre: "Hoạt hình",
+    clip: "https://www.youtube.com/embed/ByXuk9QqQkk"
   },
   {
     id: 6,
@@ -61,7 +67,8 @@ const filmsData = [
     year: "2008",
     nation: "USA",
     description: "Batman đối đầu với Joker trong trận chiến tại Gotham.",
-    genre: "Hành động"
+    genre: "Hành động",
+    clip: "https://www.youtube.com/embed/EXeTwQWrcwY"
   },
   {
     id: 7,
@@ -70,7 +77,8 @@ const filmsData = [
     year: "1994",
     nation: "USA",
     description: "Hành trình cuộc đời của Forrest Gump qua các sự kiện lịch sử.",
-    genre: "Tâm lý"
+    genre: "Tâm lý",
+    clip: "https://www.youtube.com/embed/bLvqoHBptjg"
   },
   {
     id: 8,
@@ -79,7 +87,8 @@ const filmsData = [
     year: "1997",
     nation: "USA",
     description: "Câu chuyện tình yêu trên con tàu định mệnh Titanic.",
-    genre: "Lãng mạn"
+    genre: "Lãng mạn",
+    clip: "https://www.youtube.com/embed/2e-eXJ6HgkQ"
   },
   {
     id: 9,
@@ -88,7 +97,8 @@ const filmsData = [
     year: "2019",
     nation: "USA",
     description: "Các Avengers hợp sức để đảo ngược thảm họa của Thanos.",
-    genre: "Hành động"
+    genre: "Hành động",
+    clip: "https://www.youtube.com/embed/TcMBFSGVi1c"
   },
 ];
 

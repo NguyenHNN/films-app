@@ -1,4 +1,3 @@
-// src/useFilmSelection.js
 import { useState } from 'react';
 
 export function useFilmSelection() {

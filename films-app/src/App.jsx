@@ -1,9 +1,13 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link as RouterLink } from 'react-router-dom';
+import { AppBar, Toolbar, Typography, Button, IconButton, Box } from '@mui/material';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 import Films from './components/Films';
 import FilmDetail from './components/FilmDetail';
 import Contact from './components/Contact';
-import './App.css';
+import About from './components/About';
+import News from './components/News';
 
 export const ThemeContext = createContext();
 
@@ -21,20 +25,45 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <BrowserRouter>
-        <div className="App">
-          <nav className="nav-bar">
-            <Link to="/" className="nav-link">Danh sách phim</Link>
-            <Link to="/contact" className="nav-link">Liên hệ</Link>
-            <button onClick={toggleTheme} className="theme-toggle-button">
-              Chuyển sang {theme === 'light' ? 'Chế độ tối' : 'Chế độ sáng'}
-            </button>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Films />} />
-            <Route path="/film/:id" element={<FilmDetail />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
+        <AppBar
+          position="static"
+          sx={{
+            background: 'var(--card-bg)',
+            border: '1px solid var(--card-border)',
+            boxShadow: '0 4px 16px var(--shadow-color)',
+            mb: 4,
+          }}
+        >
+          <Toolbar sx={{ justifyContent: 'space-between' }}>
+            <Typography variant="h6" component="div" sx={{ color: 'var(--text-color)' }}>
+              Films App
+            </Typography>
+            <Box>
+              <Button color="inherit" component={RouterLink} to="/" sx={{ color: 'var(--text-color)', textTransform: 'none' }}>
+                Danh sách phim
+              </Button>
+              <Button color="inherit" component={RouterLink} to="/about" sx={{ color: 'var(--text-color)', textTransform: 'none' }}>
+                Giới thiệu
+              </Button>
+              <Button color="inherit" component={RouterLink} to="/news" sx={{ color: 'var(--text-color)', textTransform: 'none' }}>
+                Tin tức
+              </Button>
+              <Button color="inherit" component={RouterLink} to="/contact" sx={{ color: 'var(--text-color)', textTransform: 'none' }}>
+                Liên hệ
+              </Button>
+              <IconButton onClick={toggleTheme} sx={{ color: 'var(--text-color)' }}>
+                {theme === 'light' ? <Brightness4Icon /> : <Brightness7Icon />}
+              </IconButton>
+            </Box>
+          </Toolbar>
+        </AppBar>
+        <Routes>
+          <Route path="/" element={<Films />} />
+          <Route path="/film/:id" element={<FilmDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </BrowserRouter>
     </ThemeContext.Provider>
   );
